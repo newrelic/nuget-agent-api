@@ -7,6 +7,7 @@ function create_dialog([System.String]$title, [System.String]$msg){
 	$objForm.Text = $title
 	$objForm.Size = New-Object System.Drawing.Size(300,200) 
 	$objForm.StartPosition = "CenterScreen"
+	$objForm.FormBorderStyle = "FixedDialog"
 
 	$objForm.KeyPreview = $True
 	$objForm.Add_KeyDown({if ($_.KeyCode -eq "Enter") 
@@ -48,7 +49,7 @@ function create_dialog([System.String]$title, [System.String]$msg){
 
 # Prompt use to enter a name then >> Solution name >> more than one role we will attempt to use worker role name
 function set_newrelic_appname_config_node([System.Xml.XmlElement]$node, [System.String]$pn){
-	$appName = create_dialog "NewRelic.AppName Key" "Please enter in the value you would like for the NewRelic.AppName AppSetting for the project named $pn (optional, if none is provided we will use the solution name)"
+	$appName = create_dialog "NewRelic.AppName Key" "Please enter the value you would like for the NewRelic.AppName AppSetting for the project named $pn (optional, if none is provided we will use the solution name)"
 	if($node -ne $null){
 		if($appname -ne $null -and $appName.Length -gt 0){
 			$node.SetAttribute('value',$appName)
