@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>NewRelic.Agent.Api</id>
-    <version>2.13.38.0</version>
+    <version>2.14.53.0</version>
     <title>NewRelic.Agent.Api</title>
     <authors>Nick Floyd</authors>
     <owners>New Relic</owners>
@@ -11,7 +11,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>The New Relic .NET Agent API supports custom error and metric reporting, and custom transaction parameters. If the agent is not installed or is disabled, method invocations of this API will have no effect. You can find more information about the NewRelic.Agent.Api at http://newrelic.com/docs/dotnet/AgentApi.</description>
     <summary>The New Relic .NET Agent API supports custom error and metric reporting, and custom transaction parameters. This is the ANY CPU build of the API.</summary>
-    <releaseNotes>v2.13.38.0 - updates to latest agent release</releaseNotes>
+    <releaseNotes>v2.14.53.0 - updates to latest agent release</releaseNotes>
     <language>en-US</language>
     <tags>New Relic</tags>
   </metadata>
