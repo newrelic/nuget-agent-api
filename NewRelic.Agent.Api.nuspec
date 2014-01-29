@@ -11,7 +11,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>The New Relic .NET Agent API supports custom error and metric reporting, and custom transaction parameters. If the agent is not installed or is disabled, method invocations of this API will have no effect. You can find more information about the NewRelic.Agent.Api at http://newrelic.com/docs/dotnet/AgentApi.</description>
     <summary>The New Relic .NET Agent API supports custom error and metric reporting, and custom transaction parameters. This is the ANY CPU build of the API.</summary>
-    <releaseNotes>v2.22.1.0 - updates to latest agent release</releaseNotes>
+    <releaseNotes>For detailed release notes see: https://docs.newrelic.com/docs/releases/dotnet</releaseNotes>
     <language>en-US</language>
     <tags>New Relic</tags>
   </metadata>
