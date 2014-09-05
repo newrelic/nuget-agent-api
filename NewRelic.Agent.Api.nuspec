@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>NewRelic.Agent.Api</id>
-    <version>3.7.33.0</version>
+    <version>3.7.37.0</version>
     <title>NewRelic.Agent.Api</title>
     <authors>Nick Floyd</authors>
     <owners>New Relic</owners>
