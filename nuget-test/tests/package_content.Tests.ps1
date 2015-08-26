@@ -14,7 +14,7 @@ Validating the data in the .nuspec file
 $modulesPath = (Split-Path -parent $MyInvocation.MyCommand.Path).Replace("\tests", "\modules\")
 Import-Module (Join-Path $modulesPath global_config.psm1) -Force
 
-	$version = "5.3.90.0"
+	$version = "5.4.16.0"
     Describe "package_content" {
 		
 		Context "When .nuspec file exists and has a metadata element" {
