@@ -12,7 +12,7 @@ Checking to see if a lib file is a particular architecture
 $modulesPath = (Split-Path -parent $MyInvocation.MyCommand.Path).Replace("\tests", "\modules\")
 Import-Module (Join-Path $modulesPath global_config.psm1) -Force
 
-	$version = "5.6.53.0"
+	$version = "5.7.17.0"
     Describe "package_lib" {	
 		It "checks to see if lib\NewRelic.Api.Agent.dll exists" {
 			(Test-Path $PackageRoot\lib\NewRelic.Api.Agent.dll) | Should Be $true
