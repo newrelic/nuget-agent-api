@@ -6,7 +6,7 @@
     <title>NewRelic.Agent.Api</title>
     <authors>Nick Floyd</authors>
     <owners>New Relic</owners>
-    <projectUrl>https://newrelic.com/docs/dotnet/AgentApi</projectUrl>
+    <projectUrl>https://docs.newrelic.com/docs/agents/net-agent/features/net-agent-api</projectUrl>
     <iconUrl>http://newrelic.com/images/avatar-newrelic.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>The New Relic .NET Agent API supports custom error and metric reporting, and custom transaction parameters. If the agent is not installed or is disabled, method invocations of this API will have no effect. You can find more information about the NewRelic.Agent.Api at http://newrelic.com/docs/dotnet/AgentApi.</description>
