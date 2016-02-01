@@ -5,7 +5,7 @@ If you need additional help, get support at [support.newrelic.com](https://suppo
 nuget-agent-api
 ===================
 
-The New Relic .NET Agent API supports custom error and metric reporting, and custom transaction parameters. If the agent is not installed or is disabled, method invocations of this API will have no effect. You can find more information about the NewRelic.Agent.Api at http://newrelic.com/docs/dotnet/AgentApi. This is for the ANY CPU build of the .NET Agent API
+The New Relic .NET Agent API supports custom error and metric reporting, and custom transaction parameters. If the agent is not installed or is disabled, method invocations of this API will have no effect. You can find more information about the NewRelic.Agent.Api at https://docs.newrelic.com/docs/agents/net-agent/features/net-agent-api. This is for the ANY CPU build of the .NET Agent API
 
 
 Install
