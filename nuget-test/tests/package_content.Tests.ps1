@@ -37,8 +37,8 @@ Import-Module (Join-Path $modulesPath global_config.psm1) -Force
 				$node.owners | Should be "New Relic"
 			}
 			
-			It "Should have projectUrl element with value https://newrelic.com/docs/dotnet/AgentApi" {
-				$node.projectUrl | Should be "https://newrelic.com/docs/dotnet/AgentApi"
+			It "Should have projectUrl element with value https://docs.newrelic.com/docs/agents/net-agent/features/net-agent-api" {
+				$node.projectUrl | Should be "https://docs.newrelic.com/docs/agents/net-agent/features/net-agent-api"
 			}
 			
 			It "Should have iconUrl element with value http://newrelic.com/images/avatar-newrelic.png" {
