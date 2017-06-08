@@ -4,7 +4,7 @@
     <id>NewRelic.Agent.Api</id>
     <version>6.12.71.0</version>
     <title>NewRelic.Agent.Api</title>
-    <authors>Nick Floyd</authors>
+    <authors>New Relic</authors>
     <owners>New Relic</owners>
     <projectUrl>https://docs.newrelic.com/docs/agents/net-agent/features/net-agent-api</projectUrl>
     <iconUrl>http://newrelic.com/images/avatar-newrelic.png</iconUrl>
