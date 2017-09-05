@@ -24,7 +24,7 @@ Import-Module (Join-Path $modulesPath global_config.psm1) -Force
 		
 		#Because the target is any cpu
 		It "checks to see if lib\net35\NewRelic.Api.Agent.dll is architecture x86" {
-			Get-PEArchitecture $PackageRoot\lib\NewRelic.Api.Agent.dll | Should Be "X86"
+			Get-PEArchitecture $PackageRoot\lib\net35\NewRelic.Api.Agent.dll | Should Be "X86"
 		}
 
 		#Because the target is any cpu
