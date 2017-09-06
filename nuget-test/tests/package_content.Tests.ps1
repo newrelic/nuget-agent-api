@@ -56,8 +56,13 @@ Import-Module (Join-Path $modulesPath global_config.psm1) -Force
 			$ns = New-Object Xml.XmlNamespaceManager $nuspecXml.NameTable
 			$ns.AddNamespace( "e", "http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd" )
 		
-			It "Should have file element for lib\NewRelic.Api.Agent.dll" {
-				$result = $nuspecXml.SelectSingleNode("//e:file[@src = 'lib\NewRelic.Api.Agent.dll']", $ns)
+			It "Should have file element for lib\net35\NewRelic.Api.Agent.dll" {
+				$result = $nuspecXml.SelectSingleNode("//e:file[@src = 'lib\net35\NewRelic.Api.Agent.dll']", $ns)
+				$result.src | Should be $result.target
+			}
+
+			It "Should have file element for lib\netstandard2.0\NewRelic.Api.Agent.dll" {
+				$result = $nuspecXml.SelectSingleNode("//e:file[@src = 'lib\netstandard2.0\NewRelic.Api.Agent.dll']", $ns)
 				$result.src | Should be $result.target
 			}
 		}
