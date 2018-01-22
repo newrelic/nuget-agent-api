@@ -14,8 +14,8 @@ Import-Module (Join-Path $modulesPath global_config.psm1) -Force
 
 	$version = "6.20.166.0"
     Describe "package_lib" {	
-		It "checks to see if lib\net35\NewRelic.Api.Agent.dll exists" {
-			(Test-Path $PackageRoot\lib\net35\NewRelic.Api.Agent.dll) | Should Be $true
+		It "checks to see if lib\net45\NewRelic.Api.Agent.dll exists" {
+			(Test-Path $PackageRoot\lib\net45\NewRelic.Api.Agent.dll) | Should Be $true
 		}
 
 		It "checks to see if lib\netstandard2.0\NewRelic.Api.Agent.dll exists" {
@@ -23,8 +23,8 @@ Import-Module (Join-Path $modulesPath global_config.psm1) -Force
 		}
 		
 		#Because the target is any cpu
-		It "checks to see if lib\net35\NewRelic.Api.Agent.dll is architecture x86" {
-			Get-PEArchitecture $PackageRoot\lib\net35\NewRelic.Api.Agent.dll | Should Be "X86"
+		It "checks to see if lib\net45\NewRelic.Api.Agent.dll is architecture x86" {
+			Get-PEArchitecture $PackageRoot\lib\net45\NewRelic.Api.Agent.dll | Should Be "X86"
 		}
 
 		#Because the target is any cpu
@@ -32,8 +32,8 @@ Import-Module (Join-Path $modulesPath global_config.psm1) -Force
 			Get-PEArchitecture $PackageRoot\lib\netstandard2.0\NewRelic.Api.Agent.dll | Should Be "X86"
 		}
 
-		It "checks to see if lib\net35\NewRelic.Api.Agent.dll is set to version $version" {
-			[System.Diagnostics.FileVersionInfo]::GetVersionInfo("$PackageRoot\lib\net35\NewRelic.Api.Agent.dll").FileVersion | Should be $version
+		It "checks to see if lib\net45\NewRelic.Api.Agent.dll is set to version $version" {
+			[System.Diagnostics.FileVersionInfo]::GetVersionInfo("$PackageRoot\lib\net45\NewRelic.Api.Agent.dll").FileVersion | Should be $version
 		}
 
 		It "checks to see if lib\netstandard2.0\NewRelic.Api.Agent.dll is set to version $version" {
